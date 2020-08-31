@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "collectionName": "type_daffaires",
+  "info": {
+    "name": "TypeDaffaire"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Domaine": {
+      "type": "string"
+    },
+    "projets": {
+      "via": "type_daffaires",
+      "collection": "projet"
+    }
+  }
+}

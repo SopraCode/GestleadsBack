@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/type-daffaires",
+      "handler": "type-daffaire.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/type-daffaires/count",
+      "handler": "type-daffaire.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/type-daffaires/:id",
+      "handler": "type-daffaire.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/type-daffaires",
+      "handler": "type-daffaire.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/type-daffaires/:id",
+      "handler": "type-daffaire.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/type-daffaires/:id",
+      "handler": "type-daffaire.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

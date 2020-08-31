@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/interlocuteur-clients",
+      "handler": "interlocuteur-client.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/interlocuteur-clients/count",
+      "handler": "interlocuteur-client.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/interlocuteur-clients/:id",
+      "handler": "interlocuteur-client.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/interlocuteur-clients",
+      "handler": "interlocuteur-client.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/interlocuteur-clients/:id",
+      "handler": "interlocuteur-client.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/interlocuteur-clients/:id",
+      "handler": "interlocuteur-client.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "etatprojet",
+  "info": {
+    "name": "etatprojet"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "etat": {
+      "type": "string"
+    },
+    "projets": {
+      "collection": "projet",
+      "via": "etatprojet"
+    },
+    "etatNonSlug": {
+      "type": "string"
+    }
+  }
+}

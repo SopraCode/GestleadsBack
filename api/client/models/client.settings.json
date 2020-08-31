@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "clients",
+  "info": {
+    "name": "client"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Nom": {
+      "type": "string"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "Installateur",
+        "Fabricant",
+        "Final",
+        "BE"
+      ]
+    },
+    "domaine": {
+      "type": "enumeration",
+      "enum": [
+        "Agro",
+        "Chimie",
+        "Automobile",
+        "Metalurgie"
+      ]
+    },
+    "projets": {
+      "via": "client",
+      "collection": "projet"
+    },
+    "interlocuteur_clients": {
+      "collection": "interlocuteur-client",
+      "via": "client"
+    }
+  }
+}

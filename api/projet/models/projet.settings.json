@@ -1,0 +1,66 @@
+{
+  "kind": "collectionType",
+  "collectionName": "projets",
+  "info": {
+    "name": "Projet"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Nom": {
+      "type": "string"
+    },
+    "DateDeRelance": {
+      "type": "date"
+    },
+    "Priorite": {
+      "type": "integer"
+    },
+    "Chiffre": {
+      "type": "decimal"
+    },
+    "NumeroDoffre": {
+      "type": "string"
+    },
+    "NumeroDeCommande": {
+      "type": "string"
+    },
+    "DescriptifDuProjet": {
+      "type": "text"
+    },
+    "client": {
+      "model": "client",
+      "via": "projets"
+    },
+    "commentaires": {
+      "collection": "commentaires",
+      "via": "projet"
+    },
+    "type_daffaires": {
+      "collection": "type-daffaire",
+      "via": "projets",
+      "dominant": true
+    },
+    "users": {
+      "plugin": "users-permissions",
+      "collection": "user",
+      "via": "projets",
+      "dominant": true
+    },
+    "etatprojet": {
+      "via": "projets",
+      "model": "etatprojet"
+    },
+    "Marques": {
+      "type": "string"
+    },
+    "marche": {
+      "type": "boolean"
+    },
+    "marge": {
+      "type": "decimal"
+    }
+  }
+}

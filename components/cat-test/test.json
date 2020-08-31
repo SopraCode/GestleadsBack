@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_cat_test_tests",
+  "info": {
+    "name": "test",
+    "icon": "ambulance"
+  },
+  "options": {},
+  "attributes": {
+    "mdp_test": {
+      "type": "password"
+    }
+  }
+}

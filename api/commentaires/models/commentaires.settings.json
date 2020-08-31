@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "collectionName": "commentaires",
+  "info": {
+    "name": "Commentaires"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Commentaire": {
+      "type": "text"
+    },
+    "projet": {
+      "via": "commentaires",
+      "model": "projet"
+    }
+  }
+}

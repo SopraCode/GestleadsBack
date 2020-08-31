@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/etatprojets",
+      "handler": "etatprojet.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/etatprojets/count",
+      "handler": "etatprojet.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/etatprojets/:id",
+      "handler": "etatprojet.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/etatprojets",
+      "handler": "etatprojet.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/etatprojets/:id",
+      "handler": "etatprojet.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/etatprojets/:id",
+      "handler": "etatprojet.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "test_relations",
+  "info": {
+    "name": "TestRelation"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "texte": {
+      "type": "string"
+    },
+    "nombre": {
+      "type": "integer"
+    },
+    "test": {
+      "via": "test_relations",
+      "model": "test"
+    }
+  }
+}
