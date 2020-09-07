@@ -35,8 +35,8 @@
       "via": "projets"
     },
     "commentaires": {
-      "collection": "commentaires",
-      "via": "projet"
+      "via": "projet",
+      "collection": "commentaires"
     },
     "type_daffaires": {
       "collection": "type-daffaire",

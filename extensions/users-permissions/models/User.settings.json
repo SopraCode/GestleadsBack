@@ -56,6 +56,10 @@
     "projets": {
       "via": "users",
       "collection": "projet"
+    },
+    "commentaires": {
+      "via": "user",
+      "collection": "commentaires"
     }
   }
 }

@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "09/04/2020 9:14:21 PM"
+    "x-generation-date": "09/07/2020 9:49:19 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -7188,6 +7188,60 @@
               }
             }
           },
+          "user": {
+            "required": [
+              "id",
+              "username",
+              "email"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "username": {
+                "type": "string"
+              },
+              "email": {
+                "type": "string"
+              },
+              "provider": {
+                "type": "string"
+              },
+              "password": {
+                "type": "string"
+              },
+              "resetPasswordToken": {
+                "type": "string"
+              },
+              "confirmed": {
+                "type": "boolean"
+              },
+              "blocked": {
+                "type": "boolean"
+              },
+              "role": {
+                "type": "string"
+              },
+              "projets": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "commentaires": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
+          },
           "created_by": {
             "required": [
               "id",
@@ -7284,6 +7338,9 @@
             "type": "string"
           },
           "projet": {
+            "type": "string"
+          },
+          "user": {
             "type": "string"
           },
           "created_by": {
@@ -7855,6 +7912,9 @@
                 "projet": {
                   "type": "string"
                 },
+                "user": {
+                  "type": "string"
+                },
                 "created_by": {
                   "type": "string"
                 },
@@ -7929,6 +7989,12 @@
                   "type": "string"
                 },
                 "projets": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "commentaires": {
                   "type": "array",
                   "items": {
                     "type": "string"
@@ -8752,6 +8818,12 @@
                     "type": "string"
                   }
                 },
+                "commentaires": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
                 "created_by": {
                   "type": "string"
                 },
@@ -9026,6 +9098,34 @@
               }
             }
           },
+          "commentaires": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "Commentaire": {
+                  "type": "string"
+                },
+                "projet": {
+                  "type": "string"
+                },
+                "user": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
+          },
           "created_by": {
             "required": [
               "id",
@@ -9152,6 +9252,12 @@
             "type": "string"
           },
           "projets": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "commentaires": {
             "type": "array",
             "items": {
               "type": "string"

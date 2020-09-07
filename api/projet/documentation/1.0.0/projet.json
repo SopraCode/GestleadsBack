@@ -596,6 +596,9 @@
                 "projet": {
                   "type": "string"
                 },
+                "user": {
+                  "type": "string"
+                },
                 "created_by": {
                   "type": "string"
                 },
@@ -670,6 +673,12 @@
                   "type": "string"
                 },
                 "projets": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "commentaires": {
                   "type": "array",
                   "items": {
                     "type": "string"

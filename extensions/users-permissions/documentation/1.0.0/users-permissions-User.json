@@ -1324,6 +1324,34 @@
               }
             }
           },
+          "commentaires": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "Commentaire": {
+                  "type": "string"
+                },
+                "projet": {
+                  "type": "string"
+                },
+                "user": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
+          },
           "created_by": {
             "required": [
               "id",
@@ -1450,6 +1478,12 @@
             "type": "string"
           },
           "projets": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "commentaires": {
             "type": "array",
             "items": {
               "type": "string"
