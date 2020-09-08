@@ -13,8 +13,8 @@
       "type": "string"
     },
     "projets": {
-      "collection": "projet",
-      "via": "etatprojet"
+      "via": "etatprojet",
+      "collection": "projet"
     },
     "etatNonSlug": {
       "type": "string"

@@ -12,31 +12,17 @@
     "Nom": {
       "type": "string"
     },
-    "type": {
-      "type": "enumeration",
-      "enum": [
-        "Installateur",
-        "Fabricant",
-        "Final",
-        "BE"
-      ]
-    },
-    "domaine": {
-      "type": "enumeration",
-      "enum": [
-        "Agro",
-        "Chimie",
-        "Automobile",
-        "Metalurgie"
-      ]
-    },
     "projets": {
-      "via": "client",
-      "collection": "projet"
-    },
-    "interlocuteur_clients": {
-      "collection": "interlocuteur-client",
+      "collection": "projet",
       "via": "client"
+    },
+    "type_clients": {
+      "via": "clients",
+      "collection": "type-client"
+    },
+    "domaine_clients": {
+      "via": "clients",
+      "collection": "domaine-client"
     }
   }
 }

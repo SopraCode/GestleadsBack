@@ -544,43 +544,6 @@
           "Mail": {
             "type": "string"
           },
-          "client": {
-            "required": [
-              "id"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "Nom": {
-                "type": "string"
-              },
-              "type": {
-                "type": "string"
-              },
-              "domaine": {
-                "type": "string"
-              },
-              "projets": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "interlocuteur_clients": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "created_by": {
-                "type": "string"
-              },
-              "updated_by": {
-                "type": "string"
-              }
-            }
-          },
           "created_by": {
             "required": [
               "id",
@@ -680,9 +643,6 @@
             "type": "string"
           },
           "Mail": {
-            "type": "string"
-          },
-          "client": {
             "type": "string"
           },
           "created_by": {

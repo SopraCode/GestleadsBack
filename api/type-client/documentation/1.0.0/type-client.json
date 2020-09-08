@@ -1,18 +1,19 @@
 {
   "paths": {
-    "/commentaires": {
+    "/type-clients": {
       "get": {
         "deprecated": false,
-        "description": "Find all the commentaires's records",
+        "description": "",
         "responses": {
           "200": {
-            "description": "Retrieve commentaires document(s)",
+            "description": "response",
             "content": {
               "application/json": {
                 "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/Commentaires"
+                  "properties": {
+                    "foo": {
+                      "type": "string"
+                    }
                   }
                 }
               }
@@ -51,7 +52,7 @@
         },
         "summary": "",
         "tags": [
-          "Commentaires"
+          "Type-client"
         ],
         "parameters": [
           {
@@ -194,79 +195,16 @@
       },
       "post": {
         "deprecated": false,
-        "description": "Create a new commentaires record",
+        "description": "Create a new record",
         "responses": {
           "200": {
-            "description": "Retrieve commentaires document(s)",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Commentaires"
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "default": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        },
-        "summary": "",
-        "tags": [
-          "Commentaires"
-        ],
-        "requestBody": {
-          "description": "",
-          "required": true,
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/NewCommentaires"
-              }
-            }
-          }
-        }
-      }
-    },
-    "/commentaires/count": {
-      "get": {
-        "deprecated": false,
-        "description": "Retrieve the numver of commentaires documents",
-        "responses": {
-          "200": {
-            "description": "Retrieve commentaires document(s)",
+            "description": "response",
             "content": {
               "application/json": {
                 "schema": {
                   "properties": {
-                    "count": {
-                      "type": "integer"
+                    "foo": {
+                      "type": "string"
                     }
                   }
                 }
@@ -306,22 +244,36 @@
         },
         "summary": "",
         "tags": [
-          "Commentaires"
+          "Type-client"
         ],
-        "parameters": []
+        "requestBody": {
+          "description": "",
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/NewType-client"
+              }
+            }
+          }
+        }
       }
     },
-    "/commentaires/{id}": {
+    "/type-clients/count": {
       "get": {
         "deprecated": false,
-        "description": "Find one commentaires record",
+        "description": "",
         "responses": {
           "200": {
-            "description": "Retrieve commentaires document(s)",
+            "description": "response",
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Commentaires"
+                  "properties": {
+                    "foo": {
+                      "type": "string"
+                    }
+                  }
                 }
               }
             }
@@ -359,7 +311,64 @@
         },
         "summary": "",
         "tags": [
-          "Commentaires"
+          "Type-client"
+        ],
+        "parameters": []
+      }
+    },
+    "/type-clients/{id}": {
+      "get": {
+        "deprecated": false,
+        "description": "",
+        "responses": {
+          "200": {
+            "description": "response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "foo": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "summary": "",
+        "tags": [
+          "Type-client"
         ],
         "parameters": [
           {
@@ -376,14 +385,18 @@
       },
       "put": {
         "deprecated": false,
-        "description": "Update a single commentaires record",
+        "description": "Update a record",
         "responses": {
           "200": {
-            "description": "Retrieve commentaires document(s)",
+            "description": "response",
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Commentaires"
+                  "properties": {
+                    "foo": {
+                      "type": "string"
+                    }
+                  }
                 }
               }
             }
@@ -421,7 +434,7 @@
         },
         "summary": "",
         "tags": [
-          "Commentaires"
+          "Type-client"
         ],
         "requestBody": {
           "description": "",
@@ -429,7 +442,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewCommentaires"
+                "$ref": "#/components/schemas/NewType-client"
               }
             }
           }
@@ -449,10 +462,10 @@
       },
       "delete": {
         "deprecated": false,
-        "description": "Delete a single commentaires record",
+        "description": "Delete a record",
         "responses": {
           "200": {
-            "description": "deletes a single commentaires based on the ID supplied",
+            "description": "deletes a single record based on the ID supplied",
             "content": {
               "application/json": {
                 "schema": {
@@ -495,7 +508,7 @@
         },
         "summary": "",
         "tags": [
-          "Commentaires"
+          "Type-client"
         ],
         "parameters": [
           {
@@ -514,7 +527,7 @@
   },
   "components": {
     "schemas": {
-      "Commentaires": {
+      "Type-client": {
         "required": [
           "id"
         ],
@@ -522,133 +535,46 @@
           "id": {
             "type": "string"
           },
-          "Commentaire": {
+          "Type": {
             "type": "string"
           },
-          "projet": {
-            "required": [
-              "id"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "Nom": {
-                "type": "string"
-              },
-              "DateDeRelance": {
-                "type": "string"
-              },
-              "Priorite": {
-                "type": "integer"
-              },
-              "Chiffre": {
-                "type": "number"
-              },
-              "NumeroDoffre": {
-                "type": "string"
-              },
-              "NumeroDeCommande": {
-                "type": "string"
-              },
-              "DescriptifDuProjet": {
-                "type": "string"
-              },
-              "client": {
-                "type": "string"
-              },
-              "commentaires": {
-                "type": "array",
-                "items": {
+          "clients": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "Nom": {
+                  "type": "string"
+                },
+                "projets": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "type_clients": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "domaine_clients": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
                   "type": "string"
                 }
-              },
-              "type_daffaires": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "users": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "etatprojet": {
-                "type": "string"
-              },
-              "Marques": {
-                "type": "string"
-              },
-              "marche": {
-                "type": "boolean"
-              },
-              "marge": {
-                "type": "number"
-              },
-              "interlocuteur": {
-                "type": "string"
-              },
-              "created_by": {
-                "type": "string"
-              },
-              "updated_by": {
-                "type": "string"
-              }
-            }
-          },
-          "user": {
-            "required": [
-              "id",
-              "username",
-              "email"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "username": {
-                "type": "string"
-              },
-              "email": {
-                "type": "string"
-              },
-              "provider": {
-                "type": "string"
-              },
-              "password": {
-                "type": "string"
-              },
-              "resetPasswordToken": {
-                "type": "string"
-              },
-              "confirmed": {
-                "type": "boolean"
-              },
-              "blocked": {
-                "type": "boolean"
-              },
-              "role": {
-                "type": "string"
-              },
-              "projets": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "commentaires": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "created_by": {
-                "type": "string"
-              },
-              "updated_by": {
-                "type": "string"
               }
             }
           },
@@ -742,16 +668,16 @@
           }
         }
       },
-      "NewCommentaires": {
+      "NewType-client": {
         "properties": {
-          "Commentaire": {
+          "Type": {
             "type": "string"
           },
-          "projet": {
-            "type": "string"
-          },
-          "user": {
-            "type": "string"
+          "clients": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
           },
           "created_by": {
             "type": "string"
@@ -763,9 +689,5 @@
       }
     }
   },
-  "tags": [
-    {
-      "name": "Commentaires"
-    }
-  ]
+  "tags": []
 }

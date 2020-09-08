@@ -589,6 +589,9 @@
                 "marge": {
                   "type": "number"
                 },
+                "interlocuteur": {
+                  "type": "string"
+                },
                 "created_by": {
                   "type": "string"
                 },

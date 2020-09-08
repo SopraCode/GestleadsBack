@@ -525,24 +525,6 @@
           "Nom": {
             "type": "string"
           },
-          "type": {
-            "type": "string",
-            "enum": [
-              "Installateur",
-              "Fabricant",
-              "Final",
-              "BE"
-            ]
-          },
-          "domaine": {
-            "type": "string",
-            "enum": [
-              "Agro",
-              "Chimie",
-              "Automobile",
-              "Metalurgie"
-            ]
-          },
           "projets": {
             "type": "array",
             "items": {
@@ -607,6 +589,9 @@
                 "marge": {
                   "type": "number"
                 },
+                "interlocuteur": {
+                  "type": "string"
+                },
                 "created_by": {
                   "type": "string"
                 },
@@ -616,7 +601,7 @@
               }
             }
           },
-          "interlocuteur_clients": {
+          "type_clients": {
             "type": "array",
             "items": {
               "required": [
@@ -626,17 +611,42 @@
                 "id": {
                   "type": "string"
                 },
-                "Nom": {
+                "Type": {
                   "type": "string"
                 },
-                "Prenom": {
+                "clients": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "created_by": {
                   "type": "string"
                 },
-                "Mail": {
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "domaine_clients": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
                   "type": "string"
                 },
-                "client": {
+                "domaine": {
                   "type": "string"
+                },
+                "clients": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
                 },
                 "created_by": {
                   "type": "string"
@@ -742,31 +752,19 @@
           "Nom": {
             "type": "string"
           },
-          "type": {
-            "type": "string",
-            "enum": [
-              "Installateur",
-              "Fabricant",
-              "Final",
-              "BE"
-            ]
-          },
-          "domaine": {
-            "type": "string",
-            "enum": [
-              "Agro",
-              "Chimie",
-              "Automobile",
-              "Metalurgie"
-            ]
-          },
           "projets": {
             "type": "array",
             "items": {
               "type": "string"
             }
           },
-          "interlocuteur_clients": {
+          "type_clients": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "domaine_clients": {
             "type": "array",
             "items": {
               "type": "string"

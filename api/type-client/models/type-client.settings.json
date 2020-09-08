@@ -1,22 +1,21 @@
 {
   "kind": "collectionType",
-  "collectionName": "interlocuteur_clients",
+  "collectionName": "type_clients",
   "info": {
-    "name": "InterlocuteurClient"
+    "name": "typeClient"
   },
   "options": {
     "increments": true,
     "timestamps": true
   },
   "attributes": {
-    "Nom": {
+    "Type": {
       "type": "string"
     },
-    "Prenom": {
-      "type": "string"
-    },
-    "Mail": {
-      "type": "email"
+    "clients": {
+      "collection": "client",
+      "via": "type_clients",
+      "dominant": true
     }
   }
 }

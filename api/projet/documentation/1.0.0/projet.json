@@ -554,19 +554,19 @@
               "Nom": {
                 "type": "string"
               },
-              "type": {
-                "type": "string"
-              },
-              "domaine": {
-                "type": "string"
-              },
               "projets": {
                 "type": "array",
                 "items": {
                   "type": "string"
                 }
               },
-              "interlocuteur_clients": {
+              "type_clients": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "domaine_clients": {
                 "type": "array",
                 "items": {
                   "type": "string"
@@ -730,6 +730,9 @@
           "marge": {
             "type": "number"
           },
+          "interlocuteur": {
+            "type": "string"
+          },
           "created_by": {
             "required": [
               "id",
@@ -875,6 +878,9 @@
           },
           "marge": {
             "type": "number"
+          },
+          "interlocuteur": {
+            "type": "string"
           },
           "created_by": {
             "type": "string"

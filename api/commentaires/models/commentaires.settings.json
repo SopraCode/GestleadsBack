@@ -13,8 +13,8 @@
       "type": "text"
     },
     "projet": {
-      "model": "projet",
-      "via": "commentaires"
+      "via": "commentaires",
+      "model": "projet"
     },
     "user": {
       "plugin": "users-permissions",

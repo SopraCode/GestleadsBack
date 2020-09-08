@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "domaine_clients",
+  "info": {
+    "name": "domaineClient"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "domaine": {
+      "type": "string"
+    },
+    "clients": {
+      "collection": "client",
+      "via": "domaine_clients",
+      "dominant": true
+    }
+  }
+}
